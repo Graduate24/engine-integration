@@ -1,0 +1,31 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: xx
+    password: xx
+    virtual-host: /
+logging:
+  level:
+    root: info
+
+minio:
+  access_key_id: xx
+  secret_access_key: xx
+  bucket-name: xx
+  protocol: http
+  host: 127.0.0.1
+  port: 9010
+  mask: 127.0.0.1
+
+compiler:
+  execpath: jspc.jar
+  tapath: ta.jar
+  maxmemory: 6
+  timeout: 20
+  jdk: jdk/rt.jar
+  tajava: graalvm-ce-17/bin/java
